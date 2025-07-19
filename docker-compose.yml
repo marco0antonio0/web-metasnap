@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  metasnap_web:
+    build: .
+    container_name: metasnap_web
+    expose:
+      - "3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.metasnap_web.rule=Host(`web-metasnap.dirrocha.com`)"
+      - "traefik.http.routers.metasnap_web.entrypoints=websecure"
+      - "traefik.http.routers.metasnap_web.tls=true"
+      - "traefik.http.routers.metasnap_web.tls.certresolver=letsEncrypt"
+      - "traefik.http.services.metasnap_web.loadbalancer.server.port=3000"
+    networks:
+      - proxy
+    volumes:
+      - ./src:/app/src
+    restart: always
+
+
+networks:
+  proxy:
+    external: true
+    name: traefik_proxy
