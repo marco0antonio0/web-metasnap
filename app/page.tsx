@@ -188,7 +188,6 @@ export default function MetaSnapGenerator() {
             </div>
           </div>
 
-          {/* Welcome State */}
           {state === "welcome" && (
             <div className="space-y-6 sm:space-y-8">
               <Card className="w-full max-w-2xl mx-auto shadow-xl border-0 bg-white/80 backdrop-blur-sm">
@@ -239,7 +238,6 @@ export default function MetaSnapGenerator() {
             </div>
           )}
 
-          {/* Loading State */}
           {state === "loading" && (
             <Card className="w-full max-w-2xl mx-auto shadow-xl border-0 bg-white/80 backdrop-blur-sm">
               <CardContent className="py-8 sm:py-12 p-4 sm:p-6">
@@ -269,7 +267,6 @@ export default function MetaSnapGenerator() {
             </Card>
           )}
 
-          {/* Result State */}
           {state === "result" && (
             <div className="space-y-6 sm:space-y-8">
               <Card className="w-full shadow-xl border-0 bg-white/80 backdrop-blur-sm">
@@ -317,7 +314,6 @@ export default function MetaSnapGenerator() {
             </div>
           )}
 
-          {/* Error State */}
           {state === "error" && (
             <Card className="w-full max-w-2xl mx-auto shadow-xl border-0 bg-white/80 backdrop-blur-sm">
               <CardContent className="py-6 sm:py-8 p-4 sm:p-6">
@@ -341,7 +337,6 @@ export default function MetaSnapGenerator() {
             </Card>
           )}
 
-          {/* Example Usage Section */}
           <Card className="mt-8 sm:mt-12 shadow-xl border-0 bg-white/80 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl">
@@ -387,7 +382,6 @@ export default function MetaSnapGenerator() {
             </CardContent>
           </Card>
 
-          {/* API Info */}
           <Card className="mt-6 sm:mt-8 shadow-xl border-0 bg-white/80 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl">
