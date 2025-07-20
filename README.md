@@ -1,6 +1,6 @@
 # 📸 MetaSnap Web
 
-
+![img](/imagesReadme/metasnap-thumbnail-1752974947588.jpg)
 
 **MetaSnap Web** é um frontend simples e direto que consome a [API MetaSnap](https://metasnap.dirrocha.com), permitindo a geração de thumbnails (capturas de tela) de qualquer site a partir de uma URL.
 
