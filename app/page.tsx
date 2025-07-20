@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Loader2, Camera, Download, RotateCcw, ExternalLink, Code2, Copy, Check } from "lucide-react"
 import Image from "next/image"
+import Head from "next/head"
 
 type AppState = "welcome" | "loading" | "result" | "error"
 
@@ -123,6 +124,40 @@ export default function MetaSnapGenerator() {
   }
 
   return (
+    <>
+    <Head>
+      <title>MetaSnap - Gerador de Thumbnails Profissionais</title>
+      <meta
+        name="description"
+        content="Gere thumbnails profissionais de qualquer site para suas meta tags e redes sociais. Ferramenta gratuita e fácil de usar."
+      />
+      <meta name="keywords" content="thumbnail, meta tags, open graph, twitter cards, seo, screenshot, preview, social media " />
+      <meta name="author" content="Dirrocha MetaSnap Team" />
+
+      <meta property="og:title" content="MetaSnap - Gerador de Thumbnails Profissionais" />
+      <meta
+        property="og:description"
+        content="Gere thumbnails profissionais de qualquer site para suas meta tags e redes sociais. Ferramenta gratuita e fácil de usar."
+      />
+      <meta property="og:image" content="https://metasnap.dirrocha.com/screenshot?url=https%3A%2F%2Fweb-metasnap.dirrocha.com%2F" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Preview do Dirrocha MetaSnap" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https%3A%2F%2Fweb-metasnap.dirrocha.com%2F" />
+      <meta property="og:site_name" content="Dirrocha MetaSnap" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="MetaSnap - Gerador de Thumbnails Profissionais" />
+      <meta
+        name="twitter:description"
+        content="Gere thumbnails profissionais de qualquer site para suas meta tags e redes sociais. Ferramenta gratuita e fácil de usar."
+      />
+      <meta name="twitter:image" content="https://metasnap.dirrocha.com/screenshot?url=https%3A%2F%2Fweb-metasnap.dirrocha.com%2F" />
+      <meta name="twitter:site" content="@MetaSnap" />
+
+      <link rel="icon" href="/favicon.ico" />
+    </Head>  
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 dark:from-gray-900 dark:via-purple-900 dark:to-blue-900">
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8">
         <div className="max-w-6xl mx-auto">
@@ -406,5 +441,6 @@ export default function MetaSnapGenerator() {
         </div>
       </div>
     </div>
+    </>
   )
 }
